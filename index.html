@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Nación - Institución Financiera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="#inicio">
+                    <img src="logo-la-nacion.svg" alt="Logo La Nación" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#requisitos">Requisitos</a></li>
+                <li><a href="#creditos" class="nav-btn">Solicitar Crédito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <h1>“Impulsamos tu crecimiento financiero con soluciones seguras, ágiles y a tu medida."</h1>
+            <p>Trabajando con solidez para el bien común de la comunidad.</p>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section-padding container">
+        <div class="grid-2">
+            <div class="info-card">
+                <h3>Nuestra Misión</h3>
+                <p>Nos comprometemos a ser un referente de confianza y solidez en el sector financiero, brindando soluciones innovadoras y accesibles que impulsan el bienestar económico de nuestros clientes, colaboradores y comunidades.</p>
+            </div>
+            <div class="info-card">
+                <h3>Nuestra Visión</h3>
+                <p>Ser la institución financiera líder de la comunidad, reconocida por su compromiso con el desarrollo sostenible, la inclusión financiera y la mejora continua de la experiencia de nuestros clientes.</p>
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h4>Equipo Directivo</h4>
+            <div class="team-grid">
+                <p><strong>Gerente:</strong> Paul Maiza</p>
+                <p><strong>Presidente:</strong> Guillermo Maiza</p>
+                <p><strong>Secretario:</strong> Klever Toala</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="text-center">Productos y Servicios</h2>
+            <div class="grid-3">
+                <div class="service-box">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h4>Ahorros</h4>
+                    <ul>
+                        <li>Ahorros programados</li>
+                        <li>Ahorros especiales</li>
+                    </ul>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>Créditos</h4>
+                    <ul>
+                        <li>Microcrédito</li>
+                        <li>Crédito emergente</li>
+                        <li>Credi La Nación</li>
+                    </ul>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-university"></i>
+                    <h4>Otros Servicios</h4>
+                    <ul>
+                        <li>Transferencias</li>
+                        <li>Pagos de servicios básicos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="requisitos" class="section-padding container">
+        <h2 class="text-center">Requisitos para Créditos</h2>
+        <div class="requisitos-content">
+            <ul class="check-list">
+                <li>Ser socio activo de la institución</li>
+                <li>Una foto tamaño carnet</li>
+                <li>Copia de cédula de identidad y papeleta de votación</li>
+                <li>Copia de la escritura o impuesto predial</li>
+                <li>Copia de plantilla de luz, agua o teléfono</li>
+                <li>Copia de certificado de ingresos (ROLES)</li>
+                <li>Copia de RUC o patente</li>
+                <li>Base de encaje</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="creditos" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="text-center text-white">Solicitud de Crédito en Línea</h2>
+            <p class="text-center text-white">Un asesor se comunicará con usted en menos de 24 horas.</p>
+            
+            <form class="form-container" action="enviar.php" method="POST">
+                <div class="form-row">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="tel" name="telefono" placeholder="Número de celular" required>
+                </div>
+                <select name="tipo_credito" required>
+                    <option value="" disabled selected>Seleccione Tipo de Crédito</option>
+                    <option value="Microcredito">Microcrédito</option>
+                    <option value="Emergente">Crédito Emergente</option>
+                    <option value="Credi La Nacion">Credi La Nación</option>
+                </select>
+                <input type="number" name="monto" placeholder="Monto que solicita ($)" required>
+                <textarea name="mensaje" placeholder="¿En qué podemos ayudarle?" rows="4"></textarea>
+                <button type="submit" class="btn-submit">Enviar Solicitud al Asesor</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>La Nación</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Ambato, Calle Cuenca y Eloy Alfaro</p>
+                <p><i class="fas fa-clock"></i> Horario: 8 am - 6 pm</p>
+            </div>
+            <div class="footer-col">
+                <h4>Atención al Cliente</h4>
+                <p>Paul Maiza: 0959013793</p>
+                <p>Guillermo Maiza: 0980393962</p>
+                <p>Email: lanacion37@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 La Nación - Institución Financiera. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
